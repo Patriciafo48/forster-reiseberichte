@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Georg Forster - Reiseberichte</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digitale Edition – Georg Forsters Reiseberichte</title>
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Optional: Tailwind-Konfiguration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1E40AF',
+          },
+        },
+      }
+    }
+  </script>
 </head>
-<body>
-    <header>
-        <h1>Georg Forster - Reiseberichte</h1>
-        <nav>
-            <a href="#">Startseite</a>
-            <a href="#">Über das Projekt</a>
-            <a href="#">Edition</a>
-            <a href="#">Kontakt</a>
-        </nav>
-    </header>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-primary text-white py-4 text-center">
+    <h1 class="text-3xl font-bold">Digitale Edition: Georg Forsters Reiseberichte</h1>
+  </header>
 
-    <main>
-        <section>
-            <h2>Willkommen</h2>
-            <p>Hier entsteht eine digitale Edition von Georg Forsters Reiseberichten.</p>
-        </section>
-    </main>
+  <main class="p-8">
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold mb-2">Über das Projekt</h2>
+      <p>Diese digitale Edition bietet eine strukturierte und durchsuchbare Präsentation von Georg Forsters Reiseberichten.</p>
+    </section>
 
-    <footer>
-        <p>&copy; 2024 [Dein Name/Institution]</p>
-    </footer>
+    <section>
+      <h2 class="text-2xl font-semibold mb-2">Transkriptionen</h2>
+      <p>Hier sind die XML-Daten verfügbar:</p>
+      <a href="data/forster-transcriptions.xml" download class="text-blue-500 underline">Download Transkriptionen</a>
+    </section>
+  </main>
 
-    <script src="js/script.js"></script> 
+  <footer class="bg-primary text-white py-4 text-center">
+    <p>&copy; 2025 Digitale Edition Georg Forster</p>
+  </footer>
 </body>
 </html>
